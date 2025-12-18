@@ -6,7 +6,7 @@ async function bootstrap() {
   
   // Habilitar CORS para permitir peticiones desde el frontend
   app.enableCors({
-    origin: ['https://loquacious-bombolone-27b747.netlify.app/', 'http://localhost:3001'],
+    origin: '*',
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT'],
     credentials: true,
   });
